@@ -1,0 +1,287 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #e8e8e8;
+    color: #222;
+}
+
+/* ENCABEZADO DEL SISTEMA */
+.encabezado-sistema {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.encabezado-sistema h1 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.encabezado-sistema h2 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    margin: 16px auto;
+    max-width: 1100px;
+    background-color: #f5f5f5;
+    border: 1px solid #aaa;
+}
+
+/* BARRA SUPERIOR */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dce6f0;
+    border-bottom: 2px solid #003366;
+    padding: 8px 12px;
+}
+
+.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+.acciones button {
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #003366;
+    color: white;
+}
+
+.acciones button:hover {
+    background-color: #00509e;
+}
+
+/* SELECTOR DE SECCION */
+.selector-seccion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.selector-seccion label {
+    font-weight: bold;
+    color: #003366;
+    font-size: 13px;
+}
+
+.selector-seccion select {
+    padding: 5px 8px;
+    font-size: 13px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    background-color: white;
+    min-width: 250px;
+}
+
+/* TABLA */
+.tabla-contenedor {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+#estudiantesTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+#estudiantesTable thead {
+    background-color: #003366;
+    color: white;
+}
+
+#estudiantesTable th {
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #002244;
+}
+
+#estudiantesTable tbody tr {
+    background-color: white;
+    cursor: pointer;
+}
+
+#estudiantesTable tbody tr:nth-child(even) {
+    background-color: #eef3f9;
+}
+
+#estudiantesTable tbody tr:hover {
+    background-color: #cce0f5;
+}
+
+#estudiantesTable tbody tr.seleccionado {
+    background-color: #ffd966;
+    font-weight: bold;
+}
+
+#estudiantesTable td {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+}
+
+/* MODAL */
+dialog {
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 0;
+    min-width: 400px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    margin: 0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#formEstudiante {
+    padding: 20px 24px;
+}
+
+#formEstudiante h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 15px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #003366;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333;
+    font-size: 13px;
+}
+
+.campo input[type="text"],
+.campo input[type="date"],
+.campo select {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 13px;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+.campo input[type="text"]:focus,
+.campo input[type="date"]:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+/* GENERO */
+.genero {
+    display: flex;
+    gap: 20px;
+    padding: 4px 0;
+}
+
+.genero label {
+    font-weight: normal !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* BOTONES MODAL */
+.botones-modal {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+}
+
+.botones-modal button {
+    padding: 7px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #555;
+}
+
+.botones-modal button[type="submit"] {
+    background-color: #003366;
+    color: white;
+}
+
+.botones-modal button[type="submit"]:hover {
+    background-color: #00509e;
+}
+
+.botones-modal button[type="button"] {
+    background-color: #888;
+    color: white;
+}
+
+.botones-modal button[type="button"]:hover {
+    background-color: #666;
+}
+
+/* img o iconos de botones */
+
+.btn-acciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width:60px
+}
+
+/* boton dialog equis */
+.btnCerrarDialog{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+/* Dialog centrado a la derecha */
+#modalEstudiante{
+    left: 71%;
+}
+#direccion {
+    width: 100%;
+    min-height: 70px;
+    resize: vertical;
+    padding: 6px 8px;
+    font-size: 13px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
