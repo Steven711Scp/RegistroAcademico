@@ -94,7 +94,7 @@
 
         <div class="campo">
             <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" name="direccion" required>
+            <textarea id="direccion" name="direccion" required></textarea>
         </div>
 
         <div class="campo">
